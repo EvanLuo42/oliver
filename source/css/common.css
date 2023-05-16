@@ -1,0 +1,33 @@
+body {
+    font-family: 'JetBrains Mono', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f3f5;
+}
+
+a:link {
+    text-decoration:none;
+    color: black;
+}
+a:visited {
+    color: black;
+    text-decoration:none;
+}
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+a:active {
+    color: black;
+    text-decoration:underline;
+}
+
+@media screen and (min-width: 600px) {
+    .footer {
+        position: static;
+        bottom: 0;
+        margin-bottom: 25px;
+    }
+}

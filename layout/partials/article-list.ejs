@@ -1,0 +1,11 @@
+<div class="articles-list">
+    <% posts.each(function (post) { %>
+        <div class="article-preview">
+            <div class="article-preview-top">
+                <a href="<%- url_for(post.path) %>"><span class="article-preview-top-title"><%= post.title %></span></a>
+                <span class="article-preview-top-date"><%= new Date(post.date).getFullYear() + '-' + new Date(post.date).getMonth()+ '-' + new Date(post.date).getDate() %></span>
+            </div>
+            <span class="article-preview-content"><%- post.excerpt %></span>
+        </div>
+    <% }); %>
+</div>

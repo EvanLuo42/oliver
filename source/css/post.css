@@ -1,0 +1,42 @@
+@media screen and (min-width: 600px) {
+    .post {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .breadcrumb {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .post-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        width: 700px;
+    }
+
+    .post-title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .post-meta {
+        margin-top: 15px;
+    }
+
+    .toc {
+        position:fixed;
+        right: 0;
+        top: 0;
+        margin-top: 5%;
+        margin-right: 40px;
+    }
+}
