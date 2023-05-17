@@ -13,7 +13,7 @@
             <%- new Date(page.date).getFullYear() + '-' + new Date(page.date).getMonth()+ '-' + new Date(page.date).getDate() %>
             <span> · </span>
             <% page.tags.each(function (tag) { %>
-                <%- '#' + tag.name %>
+                <a href="<%- url_for('/tags/' + tag.name) %>"><%- '#' + tag.name %></a>
             <% }) %>
         </div>
         <div class="post-content"><%- page.content %></div>
