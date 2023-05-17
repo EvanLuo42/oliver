@@ -23,7 +23,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 30%;
+        margin-top: 10%;
     }
 
     .post-title {
@@ -36,15 +36,7 @@
     }
 
     .toc {
-        width: 70%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin-left: 5%;
-        margin-top: 15%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        display: none;
     }
 }
 
