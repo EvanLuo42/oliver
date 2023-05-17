@@ -1,6 +1,6 @@
 <div class="page-switcher">
-    <a class="page-switcher-number" href="/">1</a>
+    <a class="page-switcher-number" href="<%- url_for(path) %>">1</a>
     <% for (var i = 2; i <= page.total; i++) { %>
-        <a class="page-switcher-number" href="/page/<%= i %>"><%= i %></a>
+        <a class="page-switcher-number" href="<%- url_for(path + 'page/' + i) %>"><%= i %></a>
     <% } %>
 </div>

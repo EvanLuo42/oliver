@@ -1,0 +1,5 @@
+<div class="tag-cloud">
+    <% site.tags.each(function (tag) { %>
+        <a href="<%- '/tags/' + tag.name %>"><%- '#' + tag.name %></a>
+    <% }) %>
+</div>

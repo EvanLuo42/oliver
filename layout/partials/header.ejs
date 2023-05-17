@@ -9,6 +9,12 @@
 <% if (is_home()) { %>
   <%- css('css/index') %>
 <% } %>
+<% if (is_tag()) { %>
+  <%- css('css/tag') %>
+<% } %>
+<% if (is_archive()) { %>
+  <%- css('css/archive') %>
+<% } %>
 <% if (is_post()) { %>
   <%- css('css/post') %>
   <link rel="stylesheet" href="/css/highlight-dark.css" media="screen and (prefers-color-scheme: dark)">

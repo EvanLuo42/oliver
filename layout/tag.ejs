@@ -1,0 +1,7 @@
+<div class="tag">
+    <img class="avatar" src="<%= theme.avatar %>"/>
+    <%- partial('partials/menu', { menu: theme.menu }) %>
+    <span style="font-size: larger; font-weight: bold; margin-top: 5%;"><%- '#' + page.tag %></span>
+    <%- partial('partials/article-list', { posts: page.posts }) %>
+    <%- partial('partials/page_switcher', { page: page, path: '/tags/' + page.tag + '/' }) %>
+</div>
