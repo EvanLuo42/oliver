@@ -1,16 +1,27 @@
 <link href="https://fonts.cdnfonts.com/css/jetbrains-mono" rel="stylesheet">
-<%- css('css/index') %>
+<title><%- config.title %></title>
+<meta charset="UTF-8">
+<meta name="description" content="<%- config.description %>">
+<meta name="keywords" content="<%- config.keywords %>">
+<meta name="author" content="<%- config.author %>">
 <%- css('css/common') %>
-<%- css('css/post') %>
-<link rel="stylesheet" href="/css/highlight-dark.css" media="screen and (prefers-color-scheme: dark)">
-<link rel="stylesheet" href="/css/highlight-light.css" media="screen and (prefers-color-scheme: light)">
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-<script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<script type="text/x-mathjax-config">
+<% if (is_home()) { %>
+  <%- css('css/index') %>
+<% } %>
+<% if (is_post()) { %>
+  <%- css('css/post') %>
+  <link rel="stylesheet" href="/css/highlight-dark.css" media="screen and (prefers-color-scheme: dark)">
+  <link rel="stylesheet" href="/css/highlight-light.css" media="screen and (prefers-color-scheme: light)">
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
     });
-</script>
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<% } %>

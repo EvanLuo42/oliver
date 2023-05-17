@@ -1,0 +1,14 @@
+avatar: https://s2.loli.net/2023/05/16/vATxzK3JSBYRyPQ.jpg
+
+menu:
+  Home: /
+  Archives: /archives
+  About: /about
+
+copyright: ©Copyright 2023 EvanLuo42. All Rights Reserved.
+
+gitalk:
+  client_id: ba0aec9545d4416b2825
+  client_secret: 775a1ebfb2bed29202f883cc9f5c60c70407d02f
+  repo: blog
+  owner: EvanLuo42

@@ -80,4 +80,8 @@
         margin-top: 10%;
         text-overflow: ellipsis;
     }
+
+    #gitalk-container {
+        width: 50%;
+    }
 }
