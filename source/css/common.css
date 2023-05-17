@@ -13,6 +13,12 @@ p {
 }
 
 @media (prefers-color-scheme: dark) {
+    html {
+        background-color: white;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
     html, img, .hljs { 
         filter: invert(1) hue-rotate(180deg);
     }
@@ -35,7 +41,7 @@ a:active {
     text-decoration:underline;
 }
 
-@media screen and (min-width: 300px) {
+@media only screen and (max-width: 500px) {
     .footer {
         position: static;
         bottom: 0;
@@ -43,7 +49,7 @@ a:active {
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 1920px) {
     .footer {
         position: static;
         bottom: 0;

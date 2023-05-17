@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-@media (min-width: 350px) and (max-width: 500px) {
+@media (min-width: 10px) and (max-width: 500px) {
     .post {
         margin: 10%;
     }
@@ -23,7 +23,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 20%;
+        padding-top: 30%;
     }
 
     .post-title {
@@ -48,7 +48,7 @@
     }
 }
 
-@media (min-width: 600px) and (max-width: 1920px) {
+@media (min-width: 501px) and (max-width: 1920px) {
     .breadcrumb {
         position: absolute;
         left: 0;

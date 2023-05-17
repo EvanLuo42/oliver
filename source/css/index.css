@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-@media screen and (min-width: 300px) {
+@media (min-width: 10px) and (max-width: 500px) {
     .home {
         margin: 10%;
     }
@@ -42,7 +42,7 @@
     }
 }
 
-@media screen and (min-width: 600px) {
+@media (min-width: 501px) and (max-width: 1920px) {
     .home {
         margin: 5%;
     }
@@ -54,9 +54,8 @@
 
     .nav-bar {
         margin-top: 20px;
-        display: grid;
+        display: flex;
         place-items: center;
-        grid-template-columns: repeat(auto, auto);
         gap: 25px;
     }
     
