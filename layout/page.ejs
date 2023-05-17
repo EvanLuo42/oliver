@@ -1,0 +1,28 @@
+<div class="page">
+    <header class="breadcrumb">
+        <a href="/" style="text-decoration: underline; font-style: italic;">Home</a>
+        <span> / </span>
+        <a style="text-decoration: underline; font-style: italic;" href="<%- url_for(page.path) %>"><%- page.title %></a>
+    </header>
+    <div class="page-body">
+        <h1 class="page-title"><%- page.title %></h1>
+        <div class="page-meta">
+            <%- new Date(page.date).getFullYear() + '-' + new Date(page.date).getMonth()+ '-' + new Date(page.date).getDate() %>
+        </div>
+        <div class="page-content"><%- page.content %></div>
+    </div>
+    <div id="gitalk-container"></div>
+    <script>
+        const gitalk = new Gitalk({
+          clientID: '<%- theme.gitalk.client_id %>',
+          clientSecret: '<%- theme.gitalk.client_secret %>',
+          repo: '<%- theme.gitalk.repo %>',
+          owner: '<%- theme.gitalk.owner %>',
+          admin: ['<%- theme.gitalk.owner %>'],
+          id: location.pathname,
+          distractionFreeMode: false
+        })
+    
+        gitalk.render('gitalk-container')
+    </script>
+</div>

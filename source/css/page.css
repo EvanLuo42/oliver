@@ -1,12 +1,21 @@
-.post {
+.page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.profile {
+    display: flex;
+    gap: 10px;
+}
+
+.profile-icon {
+    font-size: 20px;
+}
+
 @media (min-width: 10px) and (max-width: 500px) {
-    .post {
+    .page {
         margin: 10%;
     }
 
@@ -18,7 +27,7 @@
         margin-left: 5%;
     }
 
-    .post-body {
+    .page-body {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -26,17 +35,13 @@
         margin-top: 10%;
     }
 
-    .post-title {
+    .page-title {
         font-size: 30px;
         font-weight: bold;
     }
 
-    .post-meta {
+    .page-meta {
         font-style: italic;
-    }
-
-    .toc {
-        display: none;
     }
 }
 
@@ -49,31 +54,26 @@
         margin-left: 20px;
     }
 
-    .post-body {
+    .page-body {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 800px;
+        width: 55%;
         margin-top: 5%;
     }
 
-    .post-title {
+    .page-title {
         font-size: 30px;
         font-weight: bold;
     }
 
-    .toc {
-        max-width: 15%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        margin-left: 1%;
-        margin-top: 10%;
-        text-overflow: ellipsis;
+    .page-content {
+        width: 700px;
+        text-align: left;
     }
 
     #gitalk-container {
-        width: 800px;
+        width: 50%;
     }
 }
