@@ -17,12 +17,6 @@ p {
 }
 
 @media (prefers-color-scheme: dark) {
-    html {
-        background-color: white;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
     html, img, .hljs { 
         filter: invert(1) hue-rotate(180deg);
     }
