@@ -1,11 +1,54 @@
-@media screen and (min-width: 600px) {
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 350px) and (max-width: 500px) {
     .post {
+        margin: 10%;
+    }
+
+    .breadcrumb {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    .post-body {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-top: 20%;
     }
 
+    .post-title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .post-meta {
+        font-style: italic;
+    }
+
+    .toc {
+        width: 70%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 5%;
+        margin-top: 15%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1920px) {
     .breadcrumb {
         position: absolute;
         left: 0;
@@ -19,8 +62,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 55%;
         margin-top: 5%;
-        width: 700px;
     }
 
     .post-title {
@@ -28,15 +71,13 @@
         font-weight: bold;
     }
 
-    .post-meta {
-        margin-top: 15px;
-    }
-
     .toc {
-        position:fixed;
-        right: 0;
+        max-width: 15%;
+        position: fixed;
         top: 0;
-        margin-top: 5%;
-        margin-right: 40px;
+        left: 0;
+        margin-left: 1%;
+        margin-top: 10%;
+        text-overflow: ellipsis;
     }
 }

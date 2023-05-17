@@ -4,7 +4,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f2f3f5;
+}
+
+p {
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+    html, img, .hljs { 
+        filter: invert(1) hue-rotate(180deg);
+    }
 }
 
 a:link {
@@ -22,6 +33,14 @@ a:hover {
 a:active {
     color: black;
     text-decoration:underline;
+}
+
+@media screen and (min-width: 300px) {
+    .footer {
+        position: static;
+        bottom: 0;
+        margin: 25px;
+    }
 }
 
 @media screen and (min-width: 600px) {

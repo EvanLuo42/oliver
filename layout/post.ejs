@@ -1,14 +1,14 @@
 <div class="post">
     <header class="breadcrumb">
-        <a href="/" style="text-decoration: underline;">Home</a>
+        <a href="/" style="text-decoration: underline; font-style: italic;">Home</a>
         <span> / </span>
-        <a style="text-decoration: underline;" href="<%- url_for(page.path) %>"><%- page.title %></a>
+        <a style="text-decoration: underline; font-style: italic;" href="<%- url_for(page.path) %>"><%- page.title %></a>
     </header>
     <%- toc(page.content, {
-        class: 'toc',
+        list_number: false
     }) %>
     <div class="post-body">
-        <span class="post-title"><%- page.title %></span>
+        <h1 class="post-title"><%- page.title %></h1>
         <span class="post-meta"><%- new Date(page.date).getFullYear() + '-' + new Date(page.date).getMonth()+ '-' + new Date(page.date).getDate() %></span>
         <div class="post-content"><%- page.content %></div>
     </div>
