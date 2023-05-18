@@ -5,6 +5,14 @@
     align-items: center;
 }
 
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 @media (min-width: 10px) and (max-width: 500px) {
     .post {
         margin: 10%;
@@ -37,6 +45,13 @@
 
     .toc {
         display: none;
+    }
+
+    .license {
+        display: contents;
+        align-items: center;
+        justify-content: center;
+        font-size: small;
     }
 }
 
@@ -73,7 +88,15 @@
         text-overflow: ellipsis;
     }
 
+    .license {
+        display: contents;
+        align-items: center;
+        justify-content: center;
+        font-size: small;
+    }
+
     #gitalk-container {
         width: 800px;
+        margin-bottom: 15px;
     }
 }
