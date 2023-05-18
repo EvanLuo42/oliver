@@ -11,6 +11,7 @@ code.hljs {
 .hljs {
     background: rgb(245, 245, 245);
     color: #000;
+    border-radius: 5px;
 }
 
 .xml .hljs-meta {

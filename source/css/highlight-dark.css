@@ -1,9 +1,20 @@
+pre code.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 1em;
+}
+
+code.hljs {
+    padding: 3px 5px
+}
+
 .hljs {
     display: block;
     overflow-x: auto;
     padding: .5em;
-    color: #DFDFE0; /* other - white */
-    background: rgb(51, 51, 51); /* background - dark gray blue */
+    color: #DFDFE0;
+    background: rgb(51, 51, 51);
+    border-radius: 5px;
 }
 
 .hljs-comment,
