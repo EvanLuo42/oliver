@@ -41,9 +41,10 @@ a:active {
 
 @media only screen and (max-width: 500px) {
     .footer {
+        width: 70%;
         position: static;
         bottom: 0;
-        margin: 25px;
+        margin-bottom: 15px;
     }
 }
 
@@ -51,6 +52,6 @@ a:active {
     .footer {
         position: static;
         bottom: 0;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
     }
 }
